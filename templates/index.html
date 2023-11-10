@@ -1,0 +1,59 @@
+{% load static %} 
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home_Page</title> 
+
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style> 
+        .gfg { 
+            margin-left: 23%; 
+            margin-top: 10%; 
+        } 
+
+        .btn { 
+            margin-left: 45%; 
+            padding: 10px 20px; 
+            color: white; 
+            background-color: blue; 
+            font-size: 20px; 
+            border-radius: 5px; 
+            font-weight: bolder; 
+            cursor: pointer; 
+        } 
+
+        .btn:hover { 
+            color: blue; 
+            background-color: white; 
+            cursor: pointer; 
+        } 
+
+        strong { 
+            color: blue; 
+        } 
+    </style> 
+</head> 
+
+<body> 
+    <div class="container"> 
+        <h1 class="gfg"> Welcome to Student Placement Prediction Project!</h1> 
+        <br> 
+        <form action="predict"> 
+            <!-- Use Bootstrap classes for styling the button -->
+            <button class="btn btn-primary" type="submit">Click Here</button> 
+        </form> 
+    </div> 
+
+    <!-- Add Bootstrap JavaScript and Popper.js links (order matters) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body> 
+
+</html>

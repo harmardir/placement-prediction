@@ -1,0 +1,225 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Prediction Page</title> 
+    <link rel="shortcut icon" type="x-icon" href="https://i.ibb.co/VH7qsyW/Google-Chrome-icon-February-2022-svg.png"> 
+
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style> 
+        * { 
+            border-collapse: separate; 
+        } 
+
+        .main { 
+            position: absolute; 
+            top: 130px; 
+            right: 15%; 
+            width: 600px; 
+            background-color: #e6f1e6; 
+            border-radius: 15px; 
+            align-items: center; 
+            border: 2px solid blue; 
+        } 
+
+        .menu-bar .table { 
+            margin-left: -150px; 
+        } 
+
+        h1 { 
+            margin: 20px 0; 
+            color: rgb(18, 17, 17); 
+            font-size: 30px; 
+            font-weight: lighter; 
+            animation-delay: 3.5s; 
+        } 
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input[type=submit] { 
+            background-color: rgb(127, 216, 131); 
+            border: 1px solid black; 
+            color: rgb(23, 22, 22); 
+            padding: 10px 16px; 
+            cursor: pointer; 
+            border-radius: 10px; 
+        } 
+
+        input { 
+            padding: 10px; 
+        } 
+
+        p { 
+            color: #ffffff; 
+        } 
+
+        .row { 
+			text-align: center !important;
+            color: red; 
+            font-weight: bolder;
+			margin-left: 100px !important;
+        } 
+
+        .main .bold { 
+            font-style: italic; 
+        } 
+
+        .wrapper .predict { 
+            font-weight: bold; 
+        } 
+
+        .logo .title { 
+            font-size: 20px; 
+            margin-left: 30%; 
+        } 
+
+        .gfg { 
+            color: green; 
+            font-weight: bold; 
+        } 
+
+        .bold { 
+            font-size: 17px; 
+            font-weight: bold; 
+        }
+
+        /* Two-column layout */
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-column {
+            width: 40%;
+        }
+
+        .form-column {
+            width: 50%;
+        }
+
+        .form-column .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form-column label {
+            margin-bottom: 5px;
+        }
+
+		.form-group{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.form-title {
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		.title-colored {
+			color: blue;
+			font-size: 20px; 
+            margin-left: 30%;
+		}
+
+		.predict-button {
+			margin-left: 200px !important;
+		}
+
+    </style> 
+</head> 
+
+<body> 
+
+    <div class="wrapper"> 
+        <div class="info-column">
+            <div class="logo"> 
+                <br><br><br>
+				<span class="title">Use the following information to fill the form:</span>
+                <span class="title-colored">Gender</span><br> 
+                <span class="title"> Male: 0</span><br> 
+                <span class="title"> Female: 1</span><br>
+                <span class="title-colored">Stream</span><br> 
+                <span class="title"> Electrical And Communication: 0</span><br> 
+                <span class="title"> Computer Science: 1</span><br> 
+                <span class="title"> Information Technology: 2</span><br> 
+                <span class="title"> Mechanical: 3</span><br> 
+                <span class="title"> Electrical: 4</span><br> 
+                <span class="title"> Civil: 5</span><br>
+				<span class="title-colored">Internships</span><br> 
+                <span class="title">Did an Internship: 1</span><br> 
+                <span class="title">Didn't an Internship: 0</span><br>  
+				<span class="title-colored">Hostel</span><br> 
+                <span class="title">Hostel Live: 1</span><br> 
+                <span class="title">Hostel Not Live: 0</span><br>
+				<span class="title-colored">History Of Backlog</span><br> 
+                <span class="title">History of backlog: 1</span><br> 
+                <span class="title">No history of backlog: 0</span><br>
+			
+            </div> 
+        </div>
+
+        <div class="form-column">
+            <div class="top-bar"> 
+                <div class="menu-bar"> 
+                </div> 
+            </div> 
+
+            <h1>WELCOME TO THE PREDICT PAGE</h1> 
+            <div class="main"> 
+                <h2 class="form-title">College Placements Prediction</h2> <br/> 
+                <form action="result"> 
+                    <div class="form-group">
+                        <label for="n1" class="bold">Age:</label>
+                        <input type="text" class="form-control" name="n1">
+                    </div>
+                    <div class="form-group">
+                        <label for="n2" class="bold">Gender:</label>
+                        <input type="text" class="form-control" name="n2">
+                    </div>
+                    <div class="form-group">
+                        <label for="n3" class="bold">Stream:</label>
+                        <input type="text" class="form-control" name="n3">
+                    </div>
+                    <div class="form-group">
+                        <label for="n4" class="bold">Internships:</label>
+                        <input type="text" class="form-control" name="n4">
+                    </div>
+                    <div class="form-group">
+                        <label for="n5" class="bold">CGPA:</label>
+                        <input type="text" class="form-control" name="n5">
+                    </div>
+                    <div class="form-group">
+                        <label for="n6" class="bold">Hostel:</label>
+                        <input type="text" class="form-control" name="n6">
+                    </div>
+                    <div class="form-group">
+                        <label for="n7" class="bold">History Of Backlog:</label>
+                        <input type="text" class="form-control" name="n7">
+                    </div>
+
+                    <br>
+					<div class="predict-button">
+                    <input class="btn btn-primary" type="submit" value="PREDICT">
+				</div>  
+                </form> 
+                <div class="row predict-result"> 
+                    <h2>{{result2}}</h2> 
+                </div> 
+            </div>
+        </div>
+    </div> 
+
+    <!-- Add Bootstrap JavaScript and Popper.js links (order matters) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body> 
+
+</html>
